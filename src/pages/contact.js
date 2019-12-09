@@ -4,20 +4,7 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import Links from "../components/links"
 import "../styles/contact.css"
-
-const oPageMetadata = {
-  title: "Natesan Sivagnanam - Contact",
-  headerText: "Don't Be Shy, Say Hi!",
-  introText: "Got something to chat about! Go on!",
-  aContactLinkMetadata: [
-    {
-      type: "MAIL",
-      url: "mailto:nmsnatesan@gmail.com?Subject=Ahoy%20Hoy",
-      fontSize: "40px",
-      styleClass: "contactLink",
-    },
-  ],
-}
+import oPageMetadata from "../../content/contact.yaml"
 
 export default () => (
   <Container>

@@ -38,7 +38,6 @@ export default ({ pageTitle, children }) => (
         <ListLink to="/experience">Experience</ListLink>
         <ListLink to="/skills">Skills</ListLink>
         <ListLink to="/journals">Journals</ListLink>
-        <ListLink to="/books/">Books</ListLink>
         <ListLink to="/contact/">Contact</ListLink>
       </ul>
     </header>
