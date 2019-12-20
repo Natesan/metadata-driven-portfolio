@@ -1,7 +1,7 @@
 {
-  "name": "natesan-sivagnanam-portfolio",
+  "name": "natesan-sivagnanam-portfolio-metadata",
   "private": true,
-  "description": "A simplified portfolio built on Gatsby",
+  "description": "A simplified portfolio built on Gatsby using metadata",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
