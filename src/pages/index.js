@@ -10,13 +10,13 @@ import oPageMetadata from "../../content/index.yaml"
 export default () => (
   <Container>
     <Layout pageTitle={oPageMetadata.title}>
-      <div className="jumbotron text-center my-2">
+      <div className="text-center">
         <Header headerText={oPageMetadata.headerText}></Header>
       </div>
-      <div className="panel panel-default pt-2 text-center">
+      <div className="panel panel-default text-center my-3">
         <p>{oPageMetadata.introText}</p>
       </div>
-      <div className="panel panel-default pt-5 text-center d-flex justify-content-around">
+      <div className="panel panel-default text-center d-flex justify-content-around my-3">
         <Links links={oPageMetadata.homePageLinks}></Links>
       </div>
     </Layout>

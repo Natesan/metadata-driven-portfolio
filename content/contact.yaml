@@ -1,8 +1,10 @@
-title: "Natesan Sivagnanam - Contact"
+title: "<Name> - Contact"
 headerText: "Don't Be Shy, Say Hi!"
 introText: "Got something to chat about! Go on!"
+showCredits: true
 aContactLinkMetadata:
   - type: "MAIL"
-    url: "mailto:nmsnatesan@gmail.com?Subject=Ahoy%20Hoy"
+    # Please update this with your email address and a Subject Message
+    url: "mailto:sampleemail@domain.com?Subject=Hey%20Hi"
     fontSize: "40px"
     styleClass: "contactLink"

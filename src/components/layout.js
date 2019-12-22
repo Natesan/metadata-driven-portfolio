@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import PageTransition from "gatsby-plugin-page-transitions"
 
 const linkStyle = {
   textDecoration: `none`,
@@ -19,11 +20,9 @@ var oPageMetadata = {
   href: "https://natesan.netlify.com/",
 }
 
-export default ({ pageTitle, children }) => (
+export default ({ pageTitle, children, showCredits }) => (
   <div
     style={{
-      margin: `3rem auto`,
-      maxWidth: 600,
       padding: `0 1rem`,
     }}
   >
@@ -32,16 +31,33 @@ export default ({ pageTitle, children }) => (
       <title>{pageTitle}</title>
       <link rel="canonical" href={oPageMetadata.href} />
     </Helmet>
-    <header className="container mb-3">
-      <ul className="d-flex justify-content-around nav">
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/experience">Experience</ListLink>
-        <ListLink to="/skills">Skills</ListLink>
-        <ListLink to="/journals">Journals</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
-    </header>
-    <section className="container">{children}</section>
-    <footer className="container"></footer>
+    <PageTransition
+      defaultStyle={{
+        transition: `opacity 800ms cubic-bezier(0,0,1,1)`,
+        opacity: 0,
+      }}
+      transitionStyles={{
+        entering: { opacity: 1 },
+        entered: { opacity: 1 },
+        exiting: { opacity: 0 },
+        exited: { opacity: 0 },
+      }}
+    >
+      <header className="container mb-3">
+        <ul className="d-flex justify-content-around nav">
+          <ListLink to="/">Home</ListLink>
+          <ListLink to="/experience">Experience</ListLink>
+          <ListLink to="/skills">Skills</ListLink>
+          <ListLink to="/journals">Journals</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
+        </ul>
+      </header>
+      <section className="container">{children}</section>
+      {showCredits ? (
+        <footer className="container text-center blockquote-footer fixed-bottom mb-3">
+          Built using Gatsby and Netlify
+        </footer>
+      ) : null}
+    </PageTransition>
   </div>
 )
