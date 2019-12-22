@@ -1,7 +1,6 @@
-title: "Natesan Sivagnanam - Journals"
+title: "<Name> - Journals"
 headerText: "Journals"
 aTweet:
-  - "947028575437377537"
-  - "815277249943441408"
-  - "814169531669217280"
-screenName: "natesansiv"
+  # Get the tweet reference number by clicking on Embed Tweet on a particular tweet and obtain unique number from the embed link
+  - "1202379112377176067"
+screenName: "<Twitter_ID>"
