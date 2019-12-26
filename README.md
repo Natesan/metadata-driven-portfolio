@@ -4,6 +4,8 @@
 
 Kick off your metadata driven portfolio with this repository. This ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast portfolio generator for React.
 
+Link to the hosted metadata driven portfolio [metadata-portfolio.netlify.com](https://metadata-portfolio.netlify.com/)
+
 ## 🚀 Quick start
 
 1.  **Clone the repo.**
@@ -21,6 +23,7 @@ Kick off your metadata driven portfolio with this repository. This ships with th
 
     ```shell
     cd metadata-driven-portfolio/
+    npm install
     gatsby develop
     ```
 
