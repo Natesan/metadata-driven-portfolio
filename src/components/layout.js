@@ -33,7 +33,7 @@ export default ({ pageTitle, children, showCredits }) => (
     </Helmet>
     <PageTransition
       defaultStyle={{
-        transition: `opacity 800ms cubic-bezier(0,0,1,1)`,
+        transition: `opacity 900ms cubic-bezier(0.42,0,0.58,1)`,
         opacity: 0,
       }}
       transitionStyles={{
