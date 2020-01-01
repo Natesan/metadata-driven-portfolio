@@ -1,5 +1,6 @@
 title: "<Name>"
 headerText: "Hello! I'm <Name>"
+showPortraitImage: true
 introText: "<Some Intro Text>"
 homePageLinks:
   - type: "LINKEDIN"
