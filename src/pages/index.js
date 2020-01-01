@@ -14,9 +14,12 @@ export default () => (
       <div className="text-center">
         <Header headerText={oPageMetadata.headerText}></Header>
       </div>
-      <div className="text-center d-flex justify-content-around px-5">
+      {oPageMetadata.showPortraitImage
+        ? `<div className="text-center d-flex justify-content-around px-5">
         <Thumbnail></Thumbnail>
-      </div>
+      </div>`
+        : `<>`}
+
       <div className="panel panel-default text-center my-3">
         <p>{oPageMetadata.introText}</p>
       </div>

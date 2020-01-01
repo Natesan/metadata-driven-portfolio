@@ -15,6 +15,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static`,
+        path: `${__dirname}/static/`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-page-transitions",
     },
     `gatsby-transformer-sharp`,
