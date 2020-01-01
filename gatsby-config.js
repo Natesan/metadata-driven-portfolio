@@ -3,9 +3,7 @@ module.exports = {
     title: "Natesan Sivagnanam",
     titleTemplate: "%s · The Real Hero",
     description: "Portfolio of Natesan Sivagnanam",
-    url: "https://www.natesan.netlify.com", // No trailing slash allowed!
-    image: "/favicon.ico", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@NatesanSiv",
+    url: "https://www.metadata-portfolio.netlify.com", // No trailing slash allowed!
   },
   plugins: [
     { resolve: `gatsby-plugin-react-helmet` },
@@ -17,7 +15,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static`,
+        path: `${__dirname}/static/`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-page-transitions",
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
