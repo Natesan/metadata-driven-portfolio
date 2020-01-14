@@ -6,6 +6,8 @@ Kick off your metadata driven portfolio with this repository. This ships with th
 
 Link to the hosted metadata driven portfolio [metadata-portfolio.netlify.com](https://metadata-portfolio.netlify.com/)
 
+Link to the blog on [Building a Portfolio without writing a single line of code](https://medium.com/@natesan/building-a-portfolio-using-just-textual-data-metadata-af975f06f53)
+
 ## 🚀 Quick start
 
 1.  **Clone the repo.**
